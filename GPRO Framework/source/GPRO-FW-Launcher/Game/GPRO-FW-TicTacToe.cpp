@@ -1,6 +1,6 @@
 
-#include <iostream>
 #include <stdio.h>
+#include <iostream>
 
 using namespace std;
 
@@ -66,11 +66,11 @@ int launchTicTacToe()
 {
 	gs_tictactoe game = { 0 };
 
-	cout << " | ";
+	cout << 
 
 	gs_tictactoe_reset(game);
 
-
+	cout << " | ";
 
 	return 0;
 }
