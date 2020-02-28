@@ -64,13 +64,16 @@ inline gs_tictactoe_index gs_tictactoe_reset(gs_tictactoe game)
 
 int launchTicTacToe()
 {
-	gs_tictactoe game = { 0 };
-
-	cout << 
+	gs_tictactoe game; //= { 0 };
 
 	gs_tictactoe_reset(game);
 
-	cout << " | ";
+	for (int i = 0; i < 3; i++) {
+		if (i < 2)
+			cout <<"_|_|_" << endl;
+		else
+			cout << " | | ";
+	}
 
 	return 0;
 }
