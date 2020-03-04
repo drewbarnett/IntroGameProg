@@ -2,8 +2,12 @@
 //
 
 int launchTicTacToe();
+void printBaseBoard();
+void promptUser();
 
 int main()
 {
 	launchTicTacToe();
+	printBaseBoard();
+	promptUser();
 }

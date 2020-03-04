@@ -68,14 +68,27 @@ int launchTicTacToe()
 
 	gs_tictactoe_reset(game);
 
+	return 0;
+}
+
+void printBaseBoard() {
 	for (int i = 0; i < 3; i++) {
 		if (i < 2)
-			cout <<"_|_|_" << endl;
+			cout << "_|_|_" << endl;
 		else
 			cout << " | | ";
 	}
-
-	return 0;
 }
+
+void promptUser() {
+	int test1, test2;
+	char junk;
+	cout << endl << endl << "Player 1's move: (x co-ordinate, y co-ordinate): ";
+	cin >> test1 >> junk >> test2;
+	cout << test1 << endl;
+	cout << test2 << endl;
+}
+
+
 
 //-----------------------------------------------------------------------------
